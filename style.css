@@ -1,1 +1,22 @@
 body { background-color: #ff0000 }
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: white;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: blue;}
+    to {background-color: red;}
+}
